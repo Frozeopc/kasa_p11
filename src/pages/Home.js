@@ -2,6 +2,7 @@ import React from "react";
 import Cards from "../components/Cards/Cards";
 import "../components/MessageError/MessageError.css";
 import HeroSectionImage from "../images/HeroSection.png";
+import Data from "../data/data.json";
 
 function Home() {
   return (
@@ -14,8 +15,17 @@ function Home() {
           alt='home-background'
         />
       </div>
-
-      <Cards />
+      <div className='card-container'>
+      <ul className='card-list'>
+        <li className='card-item'>
+          {Data.map((item) => {
+            return (
+      <Cards id={item.id} cover={item.cover} title={item.title} />
+      );
+    })}
+  </li>
+</ul>
+</div>
     </>
   );
 }
