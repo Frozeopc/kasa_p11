@@ -1,6 +1,6 @@
 import React from "react";
 import Cards from "../components/Cards/Cards";
-import "../components/HeroSection/HeroSection.css";
+import "../components/MessageError/MessageError.css";
 import HeroSectionImage from "../images/HeroSection.png";
 
 function Home() {

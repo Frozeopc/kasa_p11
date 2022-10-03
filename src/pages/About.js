@@ -1,7 +1,7 @@
 import React from "react";
 import DataAbout from "../data/dataAbout.json";
 import Accordion from "../components/Accordion/Accordion";
-import "../components/HeroSection/HeroSection.css";
+import "../components/MessageError/MessageError.css";
 import HeroSectionAboutImage from "../images/HeroSectionAbout.png";
 
 function About() {

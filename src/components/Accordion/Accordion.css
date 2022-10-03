@@ -62,4 +62,39 @@
     min-height: 60vh;
   }
   
+  @media only screen and (min-width: 1200px) {
+    .accordion {
+      width: 84%;
+    }
+  }
   
+  @media only screen and (min-width: 1024px) {
+    .accordion {
+      width: 60%;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .accordion {
+      width: 50%;
+    }
+  }
+  
+  @media only screen and (max-width: 735px) {
+    .accordion-container {
+      flex-direction: column;
+      width: 100%;
+    }
+    .accordion-content.show {
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 536px) {
+    .accordion-house-title {
+      font-size: 0.7rem;
+    }
+    span {
+      font-size: 2rem;
+    }
+  }

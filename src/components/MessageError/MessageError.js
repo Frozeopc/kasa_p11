@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./HeroSection.css";
+import "./MessageError.css";
 
-function HeroSection() {
+function MessageError() {
   return (
     <div className='error-container'>
       <span className='letter-404'>404</span>
@@ -14,4 +14,4 @@ function HeroSection() {
   );
 }
 
-export default HeroSection;
+export default MessageError;

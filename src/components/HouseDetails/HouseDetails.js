@@ -5,8 +5,8 @@ import { FaStar } from "react-icons/fa";
 import "./HouseDetails.css";
 
 function HouseDetails() {
-  //const { id } = useParams();
-  //const house = Data.find((item) => item.id === id);
+  const { id } = useParams();
+  const house = Data.find((item) => item.id === id);
   const starColor = {
     red: "#ff6060",
     grey: "#E3E3E3",

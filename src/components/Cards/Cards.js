@@ -33,4 +33,4 @@ function Cards() {
 
 export default Cards;
 
-//deplacer ans home ligne 8 a 12 renomez card.js
+//deplacer dans home ligne 8 a 12 renomez card.js
