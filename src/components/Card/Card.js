@@ -4,17 +4,15 @@ import { Link } from "react-router-dom";
 
 
 function Card(props) {
+  let background = props.cover
   return (
     
               <Link
                 to={`/house/${props.id}`}
                 className='house-link'
-                key={props.id}>
-                <img
-                  src={props.cover}
-                  alt={props.title}
-                  className='house-image'
-                />
+                key={props.id}
+                style={{backgroundImage:'url('+{background}+')'}}>
+                
                 <div className='card-info'>
                   <h4 className='item-title'>{props.title}</h4>
                 </div>
@@ -25,4 +23,3 @@ function Card(props) {
 
 export default Card;
 
-//deplacer dans home ligne 8 a 12 renomez card.js

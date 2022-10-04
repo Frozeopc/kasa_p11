@@ -20,10 +20,16 @@
 }
 .house-link {
   position: relative;
-  height: 20rem;
+  height: 340px;
   border-radius: 10px;
-}
+  background-position: center;
+  background-size: cover;
+  width: 340px;
 
+}
+.card-info {
+  
+}
 .house-image {
   width: 20rem;
   height: 20rem;
