@@ -1,5 +1,5 @@
 import React from "react";
-import Cards from "../components/Cards/Cards";
+import Card from "../components/Card/Card";
 import "../components/MessageError/MessageError.css";
 import HeroSectionImage from "../images/HeroSection.png";
 import Data from "../data/data.json";
@@ -20,7 +20,7 @@ function Home() {
         <li className='card-item'>
           {Data.map((item) => {
             return (
-      <Cards id={item.id} cover={item.cover} title={item.title} />
+      <Card id={item.id} cover={item.cover} title={item.title} />
       );
     })}
   </li>

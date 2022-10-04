@@ -1,9 +1,9 @@
 import React from "react";
-import "./Cards.css";
+import "./Card.css";
 import { Link } from "react-router-dom";
 
 
-function Cards(props) {
+function Card(props) {
   return (
     
               <Link
@@ -23,6 +23,6 @@ function Cards(props) {
   );
 }
 
-export default Cards;
+export default Card;
 
 //deplacer dans home ligne 8 a 12 renomez card.js
