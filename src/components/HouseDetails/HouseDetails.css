@@ -72,11 +72,14 @@
   .host-rating {
     margin: 1rem 0;
   }
+  .stars {
+    text-align: right;
+    font-size: 30px;
+  }
+  
   
   @media only screen and (max-width: 443px) {
-    .house-infos-container{
-      margin: 2rem 20px;
-    }
+    
     .house-infos-details {
       flex: 1 1 100%;
     }
@@ -89,10 +92,14 @@
       flex: 1 1 100%;
       justify-content: space-between;
     }
+    .stars {
+      
+      font-size: 15px;
+    }
   }
   
-  @media only screen and (max-width: 735px) {
-    .house-tags {
-      
+  @media only screen and (max-width: 992px) {
+    .house-infos-container{
+      margin: 2rem 20px;
     }
   }

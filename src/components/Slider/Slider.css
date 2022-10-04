@@ -32,11 +32,15 @@
   }
 
   @media only screen and (max-width: 443px) {
-    .sliders {
-      margin: 20px;
-    }
+    
     .slide-image {
       height: 255px;
+    }
+    
+  }
+  @media only screen and (max-width: 992px) {
+    .sliders{
+      margin: 0 20px;
     }
     .left-arrow,.right-arrow{
       font-size: 2rem;
