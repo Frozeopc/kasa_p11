@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2rem 6rem;
+    margin: 2rem 100px;
+    flex-wrap: wrap;
   }
   
   .house-infos-details {
@@ -72,28 +73,26 @@
     margin: 1rem 0;
   }
   
-  @media only screen and (max-width: 1155px) {
-    .house-infos-container {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+  @media only screen and (max-width: 443px) {
+    .house-infos-container{
+      margin: 2rem 20px;
     }
     .house-infos-details {
-      justify-content: center;
-      align-items: center;
+      flex: 1 1 100%;
     }
     .house-tags {
       justify-content: center;
       align-items: center;
     }
-    .house-title {
-      text-align: center;
+    .house-host-rating {
+      flex-direction: row-reverse;
+      flex: 1 1 100%;
+      justify-content: space-between;
     }
   }
   
   @media only screen and (max-width: 735px) {
     .house-tags {
-      flex-direction: column;
-      width: 40%;
+      
     }
   }
