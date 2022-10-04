@@ -2,22 +2,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2rem auto;
+    margin: 0 100px;
     border-radius: 25px;
     position: relative;
   }
   
   .slide-image {
-    width: 90%;
+    width: 100%;
     height: 415px;
     border-radius: 25px;
     object-fit: cover;
+
   }
   
   .left-arrow {
     position: absolute;
-    top: 50%;
-    left: 10rem;
+    left: 10px;
     font-size: 3rem;
     color: white;
     cursor: pointer;
@@ -25,9 +25,20 @@
   
   .right-arrow {
     position: absolute;
-    top: 50%;
-    right: 10rem;
+    right: 10px;
     font-size: 3rem;
     color: white;
     cursor: pointer;
+  }
+
+  @media only screen and (max-width: 443px) {
+    .sliders {
+      margin: 20px;
+    }
+    .slide-image {
+      height: 255px;
+    }
+    .left-arrow,.right-arrow{
+      font-size: 2rem;
+    }
   }

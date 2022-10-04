@@ -14,7 +14,7 @@ function House() {
   return (
     <div>
       <Slider pictures={house.pictures} />
-      <HouseDetails />
+      <HouseDetails house={house} />
       <div className='accordion-container'>
         <Accordion title='Description'>{house.description}</Accordion>
         <Accordion title='Equipements'>

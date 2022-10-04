@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 
 
 function Card(props) {
-  let background = props.cover
+  const background = props.cover
   return (
     
               <Link
                 to={`/house/${props.id}`}
                 className='house-link'
                 key={props.id}
-                style={{backgroundImage:'url('+{background}+')'}}>
+                style={{backgroundImage: `url(${background})`}}>
                 
                 <div className='card-info'>
                   <h4 className='item-title'>{props.title}</h4>
