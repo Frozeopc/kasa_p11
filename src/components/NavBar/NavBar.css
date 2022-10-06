@@ -18,6 +18,10 @@ a {
 .nav-link {
   color: #ff6060;
   font-family: "Montserrat", sans-serif;
+  border-bottom: 2px solid transparent ;
+}
+.nav-link:hover,.nav-link-active {
+  border-bottom: 2px solid #ff6060;
 }
 
 .logo {

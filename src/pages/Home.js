@@ -20,7 +20,7 @@ function Home() {
         <li className='card-item'>
           {Data.map((item) => {
             return (
-      <Card id={item.id} cover={item.cover} title={item.title} />
+      <Card id={item.id} cover={item.cover} title={item.title} key={item.id}/>
       );
     })}
   </li>

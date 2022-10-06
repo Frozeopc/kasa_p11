@@ -1,7 +1,7 @@
 import React from "react";
 import "./Accordion.css";
 import { useState } from "react";
-
+import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 
 function Accordion({ title, children }) {
   const [open, setOpen] = useState(false); 
@@ -14,7 +14,7 @@ function Accordion({ title, children }) {
       <div className='item'>
         <div className='accordion-house-title' onClick={toggle}>
           <h2>{title}</h2>
-          <span>{open ? "-" : "+"}</span>
+          <span>{open ? <FaChevronUp/>: <FaChevronDown/>}</span>
         </div>
 
         <div className={open ? "accordion-content show" : "accordion-content"}>
