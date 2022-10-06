@@ -20,7 +20,13 @@ a {
   font-family: "Montserrat", sans-serif;
   border-bottom: 2px solid transparent ;
 }
-.nav-link:hover,.nav-link-active {
+.nav-link:hover {
+  border-bottom: 2px solid #ff6060;
+}
+
+.nav-link-active {
+  color: #ff6060;
+  font-family: "Montserrat", sans-serif;
   border-bottom: 2px solid #ff6060;
 }
 

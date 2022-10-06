@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 import "./NavBar.css";
 import logo from "../../images/logo.png";
 
@@ -13,14 +13,14 @@ function NavBar() {
 
         <ul className='nav-menu'>
           <li className='nav-item'>
-            <Link to='/' className='nav-link'>
+            <NavLink to='/' className={({isActive}) => (isActive ? "nav-link-active" : 'nav-link')} end>
               Accueil
-            </Link>
+            </NavLink>
           </li>
           <li className='nav-item'>
-            <Link to='/about' className='nav-link'>
+            <NavLink to='/about' className={({isActive}) => (isActive ? "nav-link-active" : 'nav-link')}>
               A Propos
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
